@@ -1,0 +1,21 @@
+.header {
+  padding-block: 0.75rem;
+  background-color: var(--color-base-neutral-black);
+  color: var(--color-neutral-0);
+  position: sticky;
+  top: 0;
+  box-shadow: var(--shadow-base-default);
+  z-index: 2;
+}
+
+.headerContentContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem 1.5rem;
+}
+
+.headerActiveBlock {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+}

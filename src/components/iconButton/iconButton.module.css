@@ -1,0 +1,81 @@
+.iconButton {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  border: none;
+  height: fit-content;
+  transition: var(--transition-background-color), var(--transition-opacity),
+    var(--transition-color), var(--transition-shadow);
+}
+
+.iconButton:not(:disabled):focus-visible {
+  outline: 0.125rem solid var(--color-neutral-900);
+  outline-offset: 0.125rem;
+}
+
+.iconButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.iconButton.small {
+  padding: 0.5rem;
+}
+
+.iconButton.medium {
+  padding: 0.75rem;
+}
+
+.second {
+  color: var(--color-neutral-600);
+  background-color: transparent;
+}
+
+.second:not(:disabled):hover,
+.second:not(:disabled):focus-visible {
+  background-color: var(--color-neutral-300);
+  color: var(--color-neutral-800);
+  box-shadow: var(--shadow-sm-hover);
+}
+
+.second:not(:disabled):active {
+  background-color: var(--color-neutral-100);
+  opacity: 0.8;
+}
+
+.negative {
+  background-color: var(--color-neutral-200);
+  color: var(--color-primary-400);
+  box-shadow: var(--shadow-sm-default);
+}
+
+.negative:not(:disabled):hover,
+.negative:not(:disabled):focus-visible {
+  background-color: var(--color-primary-400);
+  color: var(--color-base-neutral-white);
+  box-shadow: var(--shadow-sm-hover);
+}
+
+.negative:not(:disabled):active {
+  background-color: var(--color-primary-300);
+  color: var(--color-base-neutral-white);
+}
+
+.negative.loading {
+  background-color: var(--color-primary-300);
+  color: var(--color-base-neutral-white);
+}
+
+.loadingIcon svg {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

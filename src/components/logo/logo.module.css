@@ -1,0 +1,15 @@
+.logoLink {
+  text-decoration: none;
+}
+
+.logoLink:focus-visible {
+  outline: 0.125rem solid var(--color-base-neutral-white);
+  outline-offset: 0.125rem;
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  margin: -0.25rem;
+}
+
+.logoLinkIcon {
+  color: var(--color-base-neutral-white);
+}

@@ -1,0 +1,83 @@
+.themeSwitcher {
+  font-size: 0;
+}
+
+/* ----------------------- focus ----------------------- */
+.themeSwitcher:has(> input:focus-visible) .themeSwitcherVisible {
+  outline: 0.125rem solid var(--color-base-neutral-white);
+  outline-offset: 0.125rem;
+  box-shadow: var(--shadow-dark-base-hover);
+}
+.themeSwitcher:has(> input:focus-visible) .themeSwitcherToggler {
+  background-color: var(--color-base-neutral-white);
+}
+.themeSwitcher:has(> input:focus-visible)
+  .themeSwitcherVisible.light
+  .themeSwitcherLightIcon,
+.themeSwitcher:has(> input:focus-visible)
+  .themeSwitcherVisible.dark
+  .themeSwitcherDarkIcon {
+  color: var(--color-base-neutral-900);
+}
+/* ----------------------------------------------------- */
+
+.themeSwitcherVisible {
+  --iconSize: 2rem;
+
+  position: relative;
+  display: inline-flex;
+  width: 4.75rem;
+  height: 2.5rem;
+  padding: 0.25rem;
+  background-color: var(--color-base-neutral-800);
+  box-shadow: var(--shadow-dark-base-default);
+  border-radius: 0.5rem;
+}
+
+/* ----------------------- hover ----------------------- */
+.themeSwitcherVisible:hover {
+  box-shadow: var(--shadow-dark-base-hover);
+}
+.themeSwitcherVisible:hover > .themeSwitcherToggler {
+  background-color: var(--color-base-neutral-white);
+}
+.themeSwitcherVisible.light:hover > .themeSwitcherLightIcon,
+.themeSwitcherVisible.dark:hover > .themeSwitcherDarkIcon {
+  color: var(--color-base-neutral-900);
+}
+/* ----------------------------------------------------- */
+
+.themeSwitcherVisible > * {
+  width: var(--iconSize);
+  height: var(--iconSize);
+  padding: 0.25rem;
+  color: var(--color-base-neutral-600);
+}
+
+.themeSwitcherLightIcon {
+  z-index: 1;
+}
+
+.themeSwitcherToggler {
+  position: absolute;
+  border-radius: 0.25rem;
+  background-color: var(--color-base-primary-400);
+  box-shadow: var(--shadow-dark-base-default);
+
+  transition: var(--transition-transform), var(--transition-background-color),
+    var(--transition-shadow);
+}
+
+.themeSwitcherVisible.dark > .themeSwitcherToggler {
+  transform: translateX(calc(var(--iconSize) + 0.25rem));
+}
+
+.themeSwitcherVisible.light > .themeSwitcherLightIcon,
+.themeSwitcherVisible.dark > .themeSwitcherDarkIcon {
+  color: var(--color-base-neutral-white);
+}
+
+.themeSwitcherDarkIcon {
+  margin-left: 0.25rem;
+  z-index: 1;
+}

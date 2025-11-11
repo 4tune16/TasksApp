@@ -1,0 +1,52 @@
+.checkbox {
+  appearance: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin: 0.125rem;
+  border-radius: 0.25rem;
+  border: calc(0.125rem - 0.5px) solid var(--color-neutral-400);
+  background-color: var(--color-neutral-0);
+  flex-shrink: 0;
+}
+
+.gray {
+  border-color: var(--color-neutral-400);
+}
+
+.gray:not(:disabled):hover {
+  border-color: var(--color-neutral-800);
+}
+
+.gray:not(:disabled):focus-visible {
+  border-color: var(--color-neutral-800);
+  outline: 0.25rem solid var(--color-neutral-400);
+  outline-offset: 0;
+}
+
+.purple {
+  border-color: var(--color-secondary-300);
+}
+
+.purple:not(:disabled):hover {
+  border-color: var(--color-secondary-500);
+}
+
+.purple:not(:disabled):focus-visible {
+  border-color: var(--color-secondary-500);
+  outline: 0.25rem solid var(--color-secondary-100);
+  outline-offset: 0;
+}
+
+.pink {
+  border-color: var(--color-primary-300);
+}
+
+.pink:not(:disabled):hover {
+  border-color: var(--color-primary-500);
+}
+
+.pink:not(:disabled):focus-visible {
+  border-color: var(--color-primary-500);
+  outline: 0.25rem solid var(--color-primary-100);
+  outline-offset: 0;
+}

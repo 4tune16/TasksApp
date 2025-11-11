@@ -1,0 +1,8 @@
+.footer {
+  width: 100%;
+  max-width: var(--main-content-max-width);
+  margin-inline: auto;
+  padding: 1rem 1.5rem;
+  color: var(--color-neutral-600);
+  text-align: center;
+}

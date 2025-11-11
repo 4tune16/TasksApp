@@ -1,0 +1,39 @@
+.mainContainer {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  justify-items: center;
+  height: 100%;
+  overflow-y: auto;
+}
+.mainContainer > * {
+  width: 100%;
+  max-width: var(--main-content-max-width);
+}
+
+.mainContainerTopBlock {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  column-gap: 1.5rem;
+  justify-content: space-between;
+  padding-top: 1.5rem;
+
+  padding-inline: 1.5rem;
+
+  padding-bottom: 1rem;
+  margin-bottom: -1rem;
+
+  background-color: var(--color-neutral-0);
+}
+
+.mainContainerTitle {
+  font: var(--font-h1);
+  color: var(--color-neutral-800);
+}
+
+.mainContainerBody {
+  padding-inline: 1.5rem;
+}

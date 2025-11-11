@@ -1,0 +1,23 @@
+.content {
+  height: calc(100dvh - 4rem);
+  max-height: calc(100dvh - 4rem);
+}
+
+.contentContainer {
+  position: relative;
+  height: inherit;
+  display: grid;
+  grid-template-columns: 12.75rem 1fr 25rem;
+  overflow-x: hidden;
+}
+
+.mainContentWrapper {
+  height: inherit;
+  background-color: var(--color-neutral-0);
+}
+
+.mainContentWidthFixator {
+  height: inherit;
+  max-width: 62.25rem;
+  margin-inline: auto;
+}

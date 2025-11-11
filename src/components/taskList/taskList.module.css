@@ -1,0 +1,8 @@
+.taskListWrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  font: var(--font-bodyLgReg);
+  color: var(--color-neutral-800);
+  margin-block: 1.5rem;
+}

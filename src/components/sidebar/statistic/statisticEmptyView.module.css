@@ -1,0 +1,13 @@
+.statisticEmptyView {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 1.5rem;
+}
+
+.statisticEmptyViewText {
+  color: var(--color-neutral-800);
+  font: var(--bodyMdReg);
+  text-align: center;
+}

@@ -1,0 +1,27 @@
+.dropdownItem {
+  display: flex;
+  column-gap: 0.5rem;
+  padding: 0.5rem;
+  font: var(--font-bodyMdReg);
+  color: var(--color-neutral-800);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: var(--color-neutral-200);
+}
+
+.dropdownItem:focus-visible {
+  outline: 0.125rem solid var(--color-neutral-900);
+  outline-offset: 0.125rem;
+}
+
+.contentRight {
+  margin-left: auto;
+}
+
+.contentLeft,
+.contentRight {
+  display: inline-flex;
+}

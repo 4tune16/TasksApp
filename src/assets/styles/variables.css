@@ -1,0 +1,123 @@
+:root {
+  --color-neutral-0: #ffffff;
+  --color-neutral-100: #fbfbfb;
+  --color-neutral-200: #f3f3f3;
+  --color-neutral-300: #ececec;
+  --color-neutral-400: #bfbfbf;
+  --color-neutral-500: #8c8c8c;
+  --color-neutral-600: #6c6c6c;
+  --color-neutral-700: #393939;
+  --color-neutral-800: #1c1c1c;
+  --color-neutral-900: #141414;
+
+  --color-secondary-0: #f5f0ff;
+  --color-secondary-100: #eadfff;
+  --color-secondary-200: #d9c5ff;
+  --color-secondary-300: #b792ff;
+  --color-secondary-400: #742cff;
+  --color-secondary-500: #581bcc;
+
+  --color-base-neutral-white: #ffffff;
+  --color-base-neutral-600: #6c6c6c;
+  --color-base-neutral-800: #262626;
+  --color-base-neutral-900: #141414;
+  --color-base-neutral-black: #000000;
+
+  --color-base-primary-100: #ffcece;
+  --color-base-primary-300: #f25959;
+  --color-base-primary-400: #d51010;
+  --color-base-primary-500: #a60c0c;
+
+  --color-primary-0: #fff4f4;
+  --color-primary-100: #ffcece;
+  --color-primary-200: #fca9a9;
+  --color-primary-300: #f25959;
+  --color-primary-400: #d51010;
+  --color-primary-500: #a60c0c;
+  --color-primary-600: #760909;
+
+  --color-overlay: rgba(0, 0, 0, 0.6);
+
+  /* shadows */
+  --shadow-light-base-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.2);
+  --shadow-light-base-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.25);
+  --shadow-light-sm-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.1);
+  --shadow-light-sm-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.2);
+  --shadow-light-lg: 0 0 12px 4px rgba(0, 0, 0, 0.1);
+
+  --shadow-dark-base-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  --shadow-dark-base-hover: 2px 8px 12px 0 rgba(0, 0, 0, 0.8);
+  --shadow-dark-sm-default: 2px 2px 4px 0 rgba(0, 0, 0, 0.3);
+  --shadow-dark-sm-hover: 2px 8px 12px 0 var(--color-overlay);
+  --shadow-dark-lg: 0 0 16px 8px rgba(0, 0, 0, 0.4);
+
+  --shadow-base-default: var(--shadow-light-base-default);
+  --shadow-base-hover: var(--shadow-light-base-hover);
+  --shadow-sm-default: var(--shadow-light-sm-default);
+  --shadow-sm-hover: var(--shadow-light-sm-hover);
+  --shadow-lg: var(--shadow-light-lg);
+
+  --font-family-base: "Source Sans3", sans-serif;
+
+  --transition-duration-default: 0.2s;
+
+  --transition-color: color var(--transition-duration-default) ease;
+  --transition-background-color: background-color
+    var(--transition-duration-default) ease;
+  --transition-border-color: border-color var(--transition-duration-default)
+    ease;
+  --transition-shadow: box-shadow var(--transition-duration-default) ease;
+  --transition-fill: fill var(--transition-duration-default) ease;
+  --transition-opacity: opacity var(--transition-duration-default) ease;
+  --transition-transform: transform var(--transition-duration-default) ease;
+  --transition-visibility: visibility var(--transition-duration-default) ease;
+
+  /* fonts */
+  --font-h1: 700 2rem/1.25 var(--font-family-base);
+  --font-h2: 700 1.5rem / calc(4 / 3) var(--font-family-base);
+  --font-h3: 700 1.125rem / calc(4 / 3) var(--font-family-base);
+  --font-bodyLgBold: 700 1.125rem / calc(4 / 3) var(--font-family-base);
+  --font-bodyLgSemi: 600 1.125rem / calc(4 / 3) var(--font-family-base);
+  --font-bodyLgReg: 400 1.125rem / calc(4 / 3) var(--font-family-base);
+  --font-bodyMdBold: 700 1rem/1.5 var(--font-family-base);
+  --font-bodyMdSemi: 600 1rem/1.5 var(--font-family-base);
+  --font-bodyMdReg: 400 1rem/1.5 var(--font-family-base);
+  --font-bodySmBold: 700 0.875rem / calc(20 / 14) var(--font-family-base);
+  --font-bodySmSemi: 600 0.875rem / calc(20 / 14) var(--font-family-base);
+  --font-bodySmReg: 400 0.875rem / calc(20 / 14) var(--font-family-base);
+
+  --main-content-max-width: 62.25rem;
+}
+
+.darkTheme {
+  --color-neutral-0: #141414;
+  --color-neutral-100: #1c1c1c;
+  --color-neutral-200: #262626;
+  --color-neutral-300: #333;
+  --color-neutral-400: #6c6c6c;
+  --color-neutral-500: #8c8c8c;
+  --color-neutral-600: #bfbfbf;
+  --color-neutral-700: #ececec;
+  --color-neutral-800: #fbfbfb;
+  --color-neutral-900: #ffffff;
+
+  --color-primary-0: #300b0b;
+  --color-primary-100: #461313;
+  --color-primary-200: #760909;
+  --color-primary-300: #a60c0c;
+  --color-primary-400: #d51010;
+  --color-primary-500: #f25959;
+
+  --color-secondary-0: #261c3c;
+  --color-secondary-100: #3d2a66;
+  --color-secondary-200: #5d38ae;
+  --color-secondary-300: #7d45ea;
+  --color-secondary-400: #9d6aff;
+  --color-secondary-500: #b792ff;
+
+  --shadow-base-default: var(--shadow-dark-base-default);
+  --shadow-base-hover: var(--shadow-dark-base-hover);
+  --shadow-sm-default: var(--shadow-dark-sm-default);
+  --shadow-sm-hover: var(--shadow-dark-sm-hover);
+  --shadow-lg: var(--shadow-dark-lg);
+}
